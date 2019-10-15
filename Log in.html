@@ -33,20 +33,20 @@
 						<td >Email</td>
 					</tr>
 					<tr>
-						<td><input type="email" name="" style="width: 260px; padding: 5px;"></td>
+						<td><input type="email" name="email" style="width: 260px; padding: 5px;"></td>
 					</tr>
 					<tr>
 						<td style="padding-top: 20px">Password</td>
 					</tr>
 					<tr>
-						<td><input type="email" name="" style="width: 260px; padding: 5px;"></td>
+						<td><input type="email" name="password" style="width: 260px; padding: 5px;"></td>
 					</tr>
 					<tr>
 						<td style=" padding-top: 20px; padding-left: 155px;"><a href="LPassword.html">Lupa Katasandi?</a></td>
 					</tr>
 					<tr>
 						<td colspan="3" href="Beranda.html" style="text-align: center;padding-top: 20px;">
-							<a href="Beranda.html"> <button>MASUK</button></a></td>
+							<a href="Beranda.html" id="btn_masuk"> <button>MASUK</button></a></td>
 					</tr>
 
 					<tr>
@@ -62,5 +62,27 @@
 				</table>
 			</div>
 	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$("#btn_masuk").click(function (event) {
+			event.preventDefault();
+			var email = $("input[name='email']").val();
+			var password = $("input[name='password']").val();
+
+			if(email == "" && password == ""){
+				alert("email dan password tidak boleh kosong");
+			}
+			else if(email != "email" && password != "password"){
+				alert("email dan password salah");
+			}
+			else{
+				$("#btn_masuk").off('click').trigger('click');
+			}
+		})
+		
+
+
+	</script>
 </body>
 </html>
