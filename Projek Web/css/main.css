@@ -1,0 +1,10 @@
+.isi{
+	padding: 30px;
+	height: 1000px;
+}
+
+.isi:after{
+	content: '';
+	clear: both;
+	display: block;
+}
