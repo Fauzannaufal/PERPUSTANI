@@ -9,44 +9,44 @@
 			background-position: center;
 		}
 		#logo{
-			 width: 30px;
- 			 height: 30px;
+			width: 30px;
+			height: 30px;
 		}
 	</style>
 </head>
 <body>
 	<div class= "background" style="height: 100vh;background-image: url(background.jpg);  " >
 		<div style="height: 140px"></div>
-			<div style="padding-bottom:100px; width: 300px; height:450px; margin: auto; padding: 0px; background-color: white;">
-				<div id="top_Background">
-					<div id="logo">
-						<img src="logo.png">
-					</div>
-					<center>
-						<strong style="font-size: 30px; color: white">Masuk</strong>
-					</center>
+		<div style="padding-bottom:100px; width: 300px; height:450px; margin: auto; padding: 0px; background-color: white;">
+			<div id="top_Background">
+				<div id="logo">
+					<img src="logo.png">
 				</div>
+				<center>
+					<strong style="font-size: 30px; color: white">Masuk</strong>
+				</center>
+			</div>
+			
+			<table style="margin-top: 40px ;margin-left: 10px; ">
 				
-				<table style="margin-top: 40px ;margin-left: 10px; ">
-					
-					<tr>
-						<td >Email</td>
-					</tr>
-					<tr>
-						<td><input type="email" name="email" style="width: 260px; padding: 5px;"></td>
-					</tr>
-					<tr>
-						<td style="padding-top: 20px">Password</td>
-					</tr>
-					<tr>
-						<td><input type="email" name="password" style="width: 260px; padding: 5px;"></td>
-					</tr>
-					<tr>
-						<td style=" padding-top: 20px; padding-left: 155px;"><a href="LPassword.html">Lupa Katasandi?</a></td>
-					</tr>
-					<tr>
-						<td colspan="3" href="Beranda.html" style="text-align: center;padding-top: 20px;">
-							<a href="Beranda.html" id="btn_masuk"> <button>MASUK</button></a></td>
+				<tr>
+					<td >Email</td>
+				</tr>
+				<tr>
+					<td><input type="email" name="email" style="width: 260px; padding: 5px;"></td>
+				</tr>
+				<tr>
+					<td style="padding-top: 20px">Password</td>
+				</tr>
+				<tr>
+					<td><input type="email" name="password" style="width: 260px; padding: 5px;"></td>
+				</tr>
+				<tr>
+					<td style=" padding-top: 20px; padding-left: 155px;"><a href="LPassword.html">Lupa Katasandi?</a></td>
+				</tr>
+				<tr>
+					<td colspan="3" href="Beranda.html" style="text-align: center;padding-top: 20px;">
+						<a href="Beranda.html" id="btn_masuk"> <button>MASUK</button></a></td>
 					</tr>
 
 					<tr>
@@ -61,28 +61,28 @@
 					</tr>
 				</table>
 			</div>
-	</div>
+		</div>
 
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript">
-		$("#btn_masuk").click(function (event) {
-			event.preventDefault();
-			var email = $("input[name='email']").val();
-			var password = $("input[name='password']").val();
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">
+			$("#btn_masuk").click(function (event) {
+				event.preventDefault();
+				var email = $("input[name='email']").val();
+				var password = $("input[name='password']").val();
 
-			if(email == "" && password == ""){
-				alert("email dan password tidak boleh kosong");
-			}
-			else if(email != "email" && password != "password"){
-				alert("email dan password salah");
-			}
-			else{
-				$("#btn_masuk").off('click').trigger('click');
-			}
-		})
-		
+				if(email == "" && password == ""){
+					alert("email dan password tidak boleh kosong");
+				}
+				else if(email != "email" && password != "password"){
+					alert("email dan password salah");
+				}
+				else{
+					$("#btn_masuk").off('click').trigger('click');
+				}
+			})
+			
 
 
-	</script>
-</body>
-</html>
+		</script>
+	</body>
+	</html>
