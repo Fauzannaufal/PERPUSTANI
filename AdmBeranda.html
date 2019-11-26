@@ -24,6 +24,12 @@
 			/*padding: 5px;*/
 		}
 
+		#list_buku:after{
+			content: " ";
+			clear: both;
+			display: table;
+		}
+
 		.buku{
 			float: left;
 			width: 22%;
@@ -41,6 +47,12 @@
 		.buku_img img{
 			width: 100%;
 			height: auto;
+		}
+
+		#load_more{
+			clear: both;
+			padding: 10px;
+			text-align: center; 
 		}
 
 		@media only screen and (max-width: 768px){
@@ -84,7 +96,7 @@
 			<input type="text" name="cari">
 		</div>
 
-		<div id="list_buku">
+		<div id="list_buku" hal="">
 
 			<div class="buku">
 				<div class="buku_img">
@@ -204,7 +216,10 @@
 				<a href="AdmUDB.html"><button>Ubah</button></a>
 				<button>Hapus</button>	
 			</div>
+			
 		</div>
+		<button id="load_more">More</button>
+
 	</div>
 
 	<div id="footer">
@@ -236,5 +251,65 @@
 	</div>
 
 	<script src="js/topnav.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$("#load_more").click(function () {
+			var hal = $("#list_buku").attr("hal");
+			hal = Number(hal);
+
+			if (hal == "") {
+				hal = 1;
+			}
+			else{
+				hal+=1;
+			}
+
+			$("#list_buku").attr("hal", hal);
+			if (hal == 2) {
+				$("#load_more").hide();
+			}
+
+			var path = "json/list_buku_"+hal+".json";
+			console.log("path : "+path);
+
+			$.ajax({
+				url : path,
+				type: 'GET',
+				dataType: 'json'
+			})
+			.done(function (buku) {
+				console.log("success");
+				console.log(buku);
+
+				// var data = JSON.parse(buku);
+				var gabung = "";
+				$.each(buku, function (index, val) {
+					gabung += `
+						<div class="buku">
+							<div class="buku_img">
+								<img src="`+val.img+`">
+							</div>
+							<hr>
+							<div class="buku_detail">
+								<h2>`+val.judul+`</h2>
+								<h3>`+val.sub_judul+`</h3>
+								<h4>`+val.penulis+`</h4>
+								<p></p>
+							</div> 
+							<a href="AdmUDB.html"><button>Ubah</button></a>
+							<button>Hapus</button>	
+						</div>
+					`;
+				});
+
+				$("#list_buku").append(gabung);
+			})
+			.fail(function (msg, xerror) {
+				console.log("error");
+				console.log(msg);
+				console.log(xerror);
+			});
+		});
+	</script>
 </body>
 </html>
