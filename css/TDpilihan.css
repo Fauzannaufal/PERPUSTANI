@@ -1,3 +1,8 @@
+		.TDp{
+			border: 2px solid black; 
+			padding: 5px; 
+			margin: auto;
+		}
 		.TDp tr td:nth-child(1){
 			width: 20px;
 			text-align: center;
@@ -11,6 +16,6 @@
 			text-align: center;
 		}
 		.TDp tr td:nth-child(4){
-			width: 850px;
+			width: 950px;
 			text-align: center;
 		}

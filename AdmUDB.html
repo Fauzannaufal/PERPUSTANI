@@ -32,7 +32,7 @@
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 			<i class="fa fa-bars"></i>
 		</a>
-		<a href="#" id="user_profile">
+		<a href="Home.html" id="user_profile">
 			<span>ADMIN</span>
 			<i class="fa fa-user"></i>
 		</a>
@@ -48,45 +48,52 @@
 	<div class="isi">
 		<div class="hal">
 			<h2>Form Data Buku</h2>
-			<table  style=" border: 2px solid black; padding: 5px; margin: auto;width: 1420px; padding: 10px;">
-				<tr>
-					<td >Judu Buku</td>
-				</tr>
-				<tr>
-					<td><input type="email" name="" style="width: 500px; padding: 5px;"></td>
-				</tr>
-				<tr>
-					<td >Pengarang</td>
-				</tr>
-				<tr>
-					<td><input type="email" name="" style="width: 500px; padding: 5px;"></td>
-				</tr>
-				<tr>
-					<td >Penerbit</td>
-				</tr>
-				<tr>
-					<td><input type="email" name="" style="width: 500px; padding: 5px;"></td>
-				</tr>
-				<tr>
-					<td >Tahun Terbit</td>
-				</tr>
-				<tr>
-					<td><input type="date" name="" style="width: 260px; padding: 5px;"></td>
-				</tr>
-				<tr>
-					<td >Jumlah Halaman</td>
-				</tr>
-				<tr>
-					<td><input type="email" name="" style="width: 260px; padding: 5px;"></td>
-				</tr>
-				<tr>
-					<td >Deskripsi</td>
-				</tr>
-				<tr >
-					<td><input type="email" name="" style="width: 700px;height: 100px; padding: 5px;"></td>
-				</tr>
-			</table>
-			<div style="margin-top: 50px; text-align: right;">
+			<div class="table_respon">
+				<table  style=" border: 2px solid black; padding: 10px; margin: auto;width: 100%; padding: 10px;">
+					<tr>
+						<td >Judu Buku</td>
+					</tr>
+					<tr>
+						<td><input type="email" name="" style="width: 500px; padding: 5px;"></td>
+					</tr>
+					<tr>
+						<td >Pengarang</td>
+					</tr>
+					<tr>
+						<td><input type="email" name="" style="width: 500px; padding: 5px;"></td>
+					</tr>
+					<tr>
+						<td >Penerbit</td>
+					</tr>
+					<tr>
+						<td><input type="email" name="" style="width: 500px; padding: 5px;"></td>
+					</tr>
+					<tr>
+						<td >Tahun Terbit</td>
+					</tr>
+					<tr>
+						<td><input type="date" name="" style="width: 260px; padding: 5px;"></td>
+					</tr>
+					<tr>
+						<td >Jumlah Halaman</td>
+					</tr>
+					<tr>
+						<td><input type="email" name="" style="width: 260px; padding: 5px;"></td>
+					</tr>
+					<tr>
+						<td >Deskripsi</td>
+					</tr>
+					<tr >
+						<td><input type="email" name="" style="width: 700px;height: 100px; padding: 5px;"></td>
+					</tr>
+					<tr id="upload_btn">
+						<td><label for="btn_file" class="uploadIcon">Masukan Gambar</label>
+						<input type="file" name="avatar" id="btn_file" value="Choose File" accept="image/*"></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div style="margin-top: 20px; text-align: right;">
 				<button><a href="AdmDBuku.html">Simpan</a></button>
 				<button style="margin-left: 20px;"> <a href="AdmDBuku.html">Kembali</a> </button>
 			</div>
@@ -98,17 +105,14 @@
 	<div id="footer">
 		<div id="about_lainnya">
 			<div id="about">
-				<h3>Tentang Kami</h3>
-				
-				<li><a href="#">Bantuan</a></li>
-				<li><a href="#">Tentang Kami</a></li>
-				<li><a href="#">Kontak kami</a></li>	
+				<h3>Tentang Kami</h3>		
+				<li><a href="AdmBantuan.html">Bantuan</a></li>
+				<li><a href="AdmTK.html">Tentang Kami</a></li>
+				<li><a href="AdmKK.html">Kontak kami</a></li>	
 			</div>
-
 			<div id="lainnya">
 				<h3>Lainnya</h3>
-				<li><a href="#">Syarat dan kebijakan</a></li>
-				<li><a href="#">Kebijakan Privasi</a></li>
+				<li><a href="AdmKdanP.html">Syarat dan kebijakan</a></li>
 			</div>
 		</div>
 		

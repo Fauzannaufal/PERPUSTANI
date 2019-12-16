@@ -1,3 +1,21 @@
+		.hal{
+			margin: 50px;
+		}
+		.isi{
+			padding: 30px;
+			height: 380px;
+		}
+		.buttonH{
+		background-color: red;
+		padding: 10px;
+		border-radius: 10px;
+		color: white;
+		}
+		.TDu{
+			border: 2px solid black; 
+			padding: 5px; 
+			margin: auto;
+		}
 		.TDu tr td:nth-child(1){
 			width: 20px;
 			text-align: center;
