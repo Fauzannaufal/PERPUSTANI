@@ -13,7 +13,6 @@
 		<div id="logo">
 			<img src="logo.png">
 		</div>
-
 		<div id="Lkontak">
 			<img src="logo2.png">
 		</div>
@@ -264,7 +263,7 @@
 	});
 
 	$("#load_more").click(function () {
-		var hal = $("#list_buku").attr("hal");
+		var hal = $("#list_buku").attr("hal");//ngegate hal di list buku yang kosong
 		hal = Number(hal);
 
 		if (hal == "") {
@@ -274,15 +273,15 @@
 			hal+=1;
 		}
 
-		$("#list_buku").attr("hal", hal);
+		$("#list_buku").attr("hal", hal); // di isi denngan hal
 		if (hal == 2) {
 			$("#load_more").hide();
 		}
 
-		var path = "json/list_buku_"+hal+".json";
+		var path = "json/list_buku_"+hal+".json";//meload file json
 		console.log("path : "+path);
 
-		$.ajax({
+		$.ajax({//
 			url : path,
 			type: 'GET',
 			dataType: 'json'
@@ -293,7 +292,7 @@
 
 				// var data = JSON.parse(buku);
 				var gabung = "";
-				$.each(buku, function (index, val) {
+				$.each(buku, function (index, val) {//looping
 					gabung += `
 					<div class="buku">
 					<div class="buku_img">
@@ -312,7 +311,7 @@
 					`;
 				});
 
-				$("#list_buku").append(gabung);
+				$("#list_buku").append(gabung);//menempel ke beranda isi dari json
 			})
 		.fail(function (msg, xerror) {
 			console.log("error");

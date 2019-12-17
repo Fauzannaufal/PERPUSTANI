@@ -8,49 +8,49 @@
 	</style>
 </head>
 <body>
-	<div class= "background" style="height: 100vh;background-image: url(background.jpg);  " >
-		<div style="height: 140px"></div>
-		<div style="padding-bottom:100px; width: 300px; height:450px; margin: auto; padding: 0px; background-color: white;">
+	<div class= "background" id="Bckgd" style="height: 100vh;background-image: url(background.jpg);" >
+		<div id="Pdiv"></div>
+		<div id="Pdiv2">
 			<div id="top_Background">
 				<div id="logo">
 					<img src="logo.png">
 				</div>
 				<center>
-					<strong style="font-size: 30px; color: white">Masuk</strong>
+					<strong class="FMsk">Masuk</strong>
 				</center>
 			</div>
 			
-			<table style="margin-top: 40px ;margin-left: 10px; ">
+			<table id="TLog">
 				<form action="Beranda.html">
 					<tr>
 						<td >Email</td>
 					</tr>
 					<tr>
-						<td><input type="email" name="email" style="width: 260px; padding: 5px;"></td>
+						<td><input id="Flog1" type="email" name="email"></td>
 					</tr>
 					<tr>
-						<td style="padding-top: 20px">Password</td>
+						<td id="ppswd">Password</td>
 					</tr>
 					<tr>
-						<td><input type="password" name="password" style="width: 260px; padding: 5px;"></td>
+						<td><input id="Flog1" type="password" name="password" ></td>
 					</tr>
 					<tr>
-						<td style=" padding-top: 20px; padding-left: 155px;"><a href="LPassword.html">Lupa Katasandi?</a></td>
+						<td id="lpswd"><a href="LPassword.html">Lupa Katasandi?</a></td>
 					</tr>
 					<tr>
-						<td colspan="3" href="Beranda.html" style="text-align: center;padding-top: 20px;">
-						<button id="btn_masuk" type="submit">MASUK</button></td>
+						<td id="BMlog" colspan="3" href="Beranda.html">
+						<button class="buttonM" type="submit" >MASUK</button></td>
 					</tr>
 				</form>
 
 				<tr>
 					<div>
-						<td style="padding-top: 30px; text-align: center;">Belum Daftar? <a href="Pendaftaran.html">Daftar Disini</a></td>
+						<td id="BDlog">Belum Daftar? <a href="Pendaftaran.html">Daftar Disini</a></td>
 					</div>
 				</tr>
 				<tr>
 					<div>
-						<td style="padding-top: 30px; text-align: center;"><a href="AdmBeranda.html">Admin</a></td>
+						<td id="Alog"><a href="AdmBeranda.html">Admin</a></td>
 					</div>
 				</tr>
 				</table>
@@ -74,9 +74,6 @@
 					$("#btn_masuk").off('click').trigger('click');
 				}
 			})
-			
-
-
 		</script>
 	</body>
 	</html>

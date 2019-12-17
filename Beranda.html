@@ -22,7 +22,7 @@
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 			<i class="fa fa-bars"></i>
 		</a>
-		<a href="#" id="user_profile">
+		<a href="Home.html" id="user_profile">
 			<span>Fauzan</span>
 			<i class="fa fa-user"></i>
 		</a>
@@ -32,15 +32,12 @@
 		<a href="TentangKami.html">Tentang Kami</a>
 		<a href="KontakKami.html">Kontak Kami</a>
 	</div>
-
 	<div class="isi">
 		<div id="cari">
 			<span><i class="fa fa-search"></i></span>
 			<input type="text" name="cari">
 		</div>
-
 		<div id="list_buku" hal="">
-
 			<div class="buku">
 				<div class="buku_img">
 					<img src="image/buku1.jpg" id="ubahgmbr">
@@ -52,8 +49,8 @@
 					<h4 id="Pls">Bargumono</h4>
 					<p></p>
 				</div> 
-				<a href="#"><button class="open_modal buttonU">Ubah</button></a>
-				<button class="buttonH">Hapus</button>	
+				<a href="#"><button class="open_modal buttonM2">Lihat</button></a>
+				<a href="#"><button class="buttonM2">Pilih</button></a>
 			</div>
 
 			<div class="buku">
@@ -67,8 +64,8 @@
 					<h4>Soetriono</h4>
 					<p></p>
 				</div> 
-				<a href="#"><button class="open_modal buttonU">Ubah</button></a>
-				<button class="buttonH">Hapus</button>	
+				<a href="#"><button class="open_modal buttonM2">Lihat</button></a>
+				<a href="#"><button class="buttonM2">Pilih</button></a>
 			</div>
 			<div class="buku">
 				<div class="buku_img">
@@ -81,8 +78,8 @@
 					<h4>Sabastian Eliyas Saragih</h4>
 					<p></p>
 				</div> 
-				<a href="#"><button class="open_modal buttonU">Ubah</button></a>
-				<button class="buttonH">Hapus</button>	
+				<a href="#"><button class="open_modal buttonM2">Lihat</button></a>
+				<a href="#"><button class="buttonM2">Pilih</button></a>
 			</div>
 
 			<div class="buku">
@@ -96,8 +93,8 @@
 					<h4>Atman</h4>
 					<p></p>
 				</div> 
-				<a href="#"><button class="open_modal buttonU">Ubah</button></a>
-				<button class="buttonH">Hapus</button>	
+				<a href="#"><button class="open_modal buttonM2">Lihat</button></a>
+				<a href="#"><button class="buttonM2">Pilih</button></a>
 			</div>
 
 			<div class="buku">
@@ -111,8 +108,8 @@
 					<h4>Bargumono</h4>
 					<p></p>
 				</div> 
-				<a href="#"><button class="open_modal buttonU">Ubah</button></a>
-				<button class="buttonH">Hapus</button>	
+				<a href="#"><button class="open_modal buttonM2">Lihat</button></a>
+				<a href="#"><button class="buttonM2">Pilih</button></a>	
 			</div>
 
 			<div class="buku">
@@ -126,8 +123,8 @@
 					<h4>Bargumono</h4>
 					<p></p>
 				</div> 
-				<a href="#"><button class="open_modal buttonU">Ubah</button></a>
-				<button class="buttonH">Hapus</button>	
+				<a href="#"><button class="open_modal buttonM2">Lihat</button></a>
+				<a href="#"><button class="buttonM2">Pilih</button></a>
 			</div>
 
 			<div class="buku">
@@ -141,8 +138,8 @@
 					<h4>Bargumono</h4>
 					<p></p>
 				</div> 
-				<a href="#"><button class="open_modal buttonU">Ubah</button></a>
-				<button class="buttonH">Hapus</button>	
+				<a href="#"><button class="open_modal buttonM2">Lihat</button></a>
+				<a href="#"><button class="buttonM2">Pilih</button></a>
 			</div>
 
 			<div class="buku">
@@ -152,35 +149,90 @@
 				<hr>
 				<div class="buku_detail">
 					<h2>AgroEkoSistem</h2>
-					<h3>Permasalahan Lingkungan Pertanian</h3>
+					<h3>Membalik arah menuju usaha Perkebunan yang tangguh melalui strategi optimalisasi efisiensi</h3>
 					<h4>Ir.Suwasono Heddy, M.S </h4>
 					<p></p>
-				</div> 
-				<a href="#"><button class="open_modal buttonU">Ubah</button></a>
-				<button class="buttonH">Hapus</button>	
+				</div>
+				<a href="#"><button class="open_modal buttonM2">Lihat</button></a> 
+				<a href="#"><button class="buttonM2">Pilih</button></a>
 			</div>
 		</div>
 		<button id="load_more">More</button>
-
 	</div>
+	<div class="modal" id="id_modal">
+		<form action="#" class="modal-content">
+			<div class="modal-top">
+				<span class="modal-close"><i class="fa fa-times"></i></span>
+				<h3>Lihat Data Buku</h3>
+			</div>
 
+			<div class="modal-middle">
+				<div class="table_respon">
+					<table  class="T_LihatB">
+						<tr>
+							<td><h1>Pertanian Organik</h1> </td>
+						</tr>
+						<tr id="upload_btn">
+							<td>
+								<div class="buku_img_ubah">
+									<img src="image/buku1.jpg" id= "contoh">
+								</div>
+							</td>
+							<tr>
+								<td><h3>Sub Judul</h3> </td>
+							</tr>
+							<tr>
+								<td>Solusi Alternatif Pertanian</td>
+							</tr>
+							<tr>
+								<td><h3>Penulis</h3></td>
+							</tr>
+							<tr>
+								<td>Ir. H. Bargumono, M. Si.</td>
+							</tr>
+							<tr>
+								<td><h3>Penerbit</h3></td>
+							</tr>
+							<tr>
+								<td>Global Pustaka</td>
+							</tr>
+							<tr>
+								<td><h3>Detail Buku</h3></td>
+							</tr>
+							<tr>
+								<td>Isi buku 114 halaman, memiliki 7 bab</td>
+							</tr>
+							<tr>
+								<td><h3>Deskripsi Buku</h3></td>
+							</tr>
+							<tr>
+								<td>Isi buku menjelaskan tentang pertanian organik</td>
+							</tr>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="modal-bottom">
+				<div id="btn_submit">
+					<button class="buttonM2" type="button" id="btn_update" href="Beranda.html">Kembali</button>
+				</div>	
+			</div>
+		</form>
+	</div>
 	<div id="footer">
 		<div id="about_lainnya">
 			<div id="about">
-				<h3>Tentang Kami</h3>
-				
-				<li><a href="#">Bantuan</a></li>
-				<li><a href="#">Tentang Kami</a></li>
-				<li><a href="#">Kontak kami</a></li>	
+				<h3>Tentang Kami</h3>		
+				<li><a href="Bantuan.html">Bantuan</a></li>
+				<li><a href="TentangKami.html">Tentang Kami</a></li>
+				<li><a href="KontakKami.html">Kontak kami</a></li>	
 			</div>
-
 			<div id="lainnya">
 				<h3>Lainnya</h3>
-				<li><a href="#">Syarat dan kebijakan</a></li>
-				<li><a href="#">Kebijakan Privasi</a></li>
+				<li><a href="SK.html">Syarat dan kebijakan</a></li>
 			</div>
 		</div>
-		
+
 
 		<div id="sosmed">
 			<h3>Ikuti Kami</h3>
@@ -192,6 +244,92 @@
 		</div>
 	</div>
 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main_script.js"></script>
 	<script src="js/topnav.js"></script>
+	<script type="text/javascript">
+
+		$(".open_modal").click(function(event) {
+			event.preventDefault();
+			modalShow();
+
+			$(".modal-close").click(function(event) {
+				modalHide();
+			});
+
+			$("#btn_update").click(function (argument) {
+				modalHide();
+			});
+
+			window.onclick = function(event) {
+				var modal = document.getElementById('id_modal');
+				if(event.target == modal){
+					modalHide();
+				}
+			};
+
+		});
+
+		$("#load_more").click(function () {
+			var hal = $("#list_buku").attr("hal");
+			hal = Number(hal);
+
+			if (hal == "") {
+				hal = 1;
+			}
+			else{
+				hal+=1;
+			}
+
+			$("#list_buku").attr("hal", hal);
+			if (hal == 2) {
+				$("#load_more").hide();
+			}
+
+			var path = "json/list_buku_"+hal+".json";
+			console.log("path : "+path);
+
+			$.ajax({
+				url : path,
+				type: 'GET',
+				dataType: 'json'
+			})
+			.done(function (buku) {
+				console.log("success");
+				console.log(buku);
+
+				// var data = JSON.parse(buku);
+				var gabung = "";
+				$.each(buku, function (index, val) {
+					gabung += `
+					<div class="buku">
+					<div class="buku_img">
+					<img src="`+val.img+`">
+					</div>
+					<hr>
+					<div class="buku_detail">
+					<h2>`+val.judul+`</h2>
+					<h3>`+val.sub_judul+`</h3>
+					<h4>`+val.penulis+`</h4>
+					<p></p>
+					</div> 
+					<a href="#"><button class="open_modal buttonM2">Lihat</button></a>
+					<a href="AdmUDB.html"><button class="buttonM2">Pilih</button ></a>
+					</div>
+					`;
+				});
+
+				$("#list_buku").append(gabung);
+			})
+			.fail(function (msg, xerror) {
+				console.log("error");
+				console.log(msg);
+				console.log(xerror);
+			});
+		});
+
+		$("#btn_update").updateBuku();
+		$("#btn_file").uploadGambar();
+	</script>
 </body>
 </html>

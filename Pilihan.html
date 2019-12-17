@@ -6,153 +6,184 @@
 	<link rel="stylesheet" type="text/css" href="css/topnav.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
-
-	<style type="text/css">
-		#cari{
-			padding: 5px;
-			margin-left: 10px;
-		}
-
-		#cari input{
-			width: 50%;
-		}
-
-		#list_buku{
-			width: 80%;
-			margin: auto;
-			/*padding: 5px;*/
-		}
-
-		.buku{
-			float: left;
-			width: 22%;
-			margin-right: 12px;
-			margin-top: 22px;
-			border: 1px solid black;
-			padding: 10px;
-			text-align: center;
-		}
-
-		.isi{
-			padding: 30px;
-			height: 380px;
-		}
-
-		@media only screen and (max-width: 768px){
-			.buku{
-				width: 33%;
-			}
-		}
-	</style>
 </head>
 <body>
 
-<div id="top_Background">
-	<div id="logo">
-		<img src="logo.png">
-	</div>
-
-	<div id="Lkontak">
-		<img src="logo2.png">
-	</div>
-</div>
-<div class="topnav" id="myTopnav">
-	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-	    <i class="fa fa-bars"></i>
-	</a>
-	<a href="#" id="user_profile">
-	  	<span>Fauzan</span>
-	  	<i class="fa fa-user"></i>
-	</a>
-	<a href=""></a> 
-	  <a href="Beranda.html">Beranda</a>
-	  <a href="Pilihan.html" class="active">Pilihan</a>
-	  <a href="TentangKami.html">Tentang Kami</a>
-	  <a href="KontakKami.html">Kontak Kami</a>
-</div>
-
-<div class="isi">
-	<div id="cari">
-		<span><i class="fa fa-search"></i></span>
-		<input type="text" name="cari">
-	</div>
-
-	<div id="list_buku">
-
-		<div class="buku">
-			<div class="buku_img">
-				<img src="#">
-			</div>
-			<hr>
-			<div class="buku_detail">
-				<h2>judul</h2>
-			</div>
-				<button>Hapus</button>	
-			</div>
-
-		<div class="buku">
-			<div class="buku_img">
-				<img src="#">
-			</div>
-			<hr>
-			<div class="buku_detail">
-				<h2>judul</h2>
-			</div>
-				<button>Hapus</button>	
-			</div>
-
-		<div class="buku">
-			<div class="buku_img">
-				<img src="#">
-			</div>
-			<hr>
-			<div class="buku_detail">
-				<h2>judul</h2>
-			</div>
-				<button>Hapus</button>	
-			</div>
-
-		<div class="buku">
-			<div class="buku_img">
-				<img src="#">
-			</div>
-			<hr>
-			<div class="buku_detail">
-				<h2>judul</h2>
-			</div>
-				<button>Hapus</button>	
-			</div>
-		</div>
-</div>
-
-<div id="footer">
-	<div id="about_lainnya">
-		<div id="about">
-			<h3>Tentang Kami</h3>
-			
-			<li><a href="#">Bantuan</a></li>
-			<li><a href="#">Tentang Kami</a></li>
-			<li><a href="#">Kontak kami</a></li>	
+	<div id="top_Background">
+		<div id="logo">
+			<img src="logo.png">
 		</div>
 
-		<div id="lainnya">
-			<h3>Lainnya</h3>
-			<li><a href="#">Syarat dan kebijakan</a></li>
-			<li><a href="#">Kebijakan Privasi</a></li>
+		<div id="Lkontak">
+			<img src="logo2.png">
 		</div>
 	</div>
-	
-
-	<div id="sosmed">
-		<h3>Ikuti Kami</h3>
-		<a href="#"><i class="fa fa-facebook"></i></a>
-		<a href="#"><i class="fa fa-twitter"></i></a>
-		<a href="#"><i class="fa fa-instagram"></i></a>
-		<!-- <i class="fa fa-gmail"></i> -->
-		<a href="#"><i class="fa fa-whatsapp"></i></a>
+	<div class="topnav" id="myTopnav">
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+		<a href="Home.html" id="user_profile">
+			<span>Fauzan</span>
+			<i class="fa fa-user"></i>
+		</a>
+		<a href=""></a> 
+		<a href="Beranda.html" >Beranda</a>
+		<a href="Pilihan.html" class="active">Pilihan</a>
+		<a href="TentangKami.html">Tentang Kami</a>
+		<a href="KontakKami.html">Kontak Kami</a>
 	</div>
-</div>
+	<div class="isi">
+		<div id="cari">
+			<span><i class="fa fa-search"></i></span>
+			<input type="text" name="cari">
+		</div>
+		<div id="list_buku" hal="">
+			<div class="buku">
+				<div class="buku_img">
+					<img src="image/buku1.jpg" id="ubahgmbr">
+				</div>
+				<hr>
+				<div class="buku_detail">
+					<h2 id = "Jubuk">Pertanian Ogranik</h2>
+					<h3 id = "Suju">Solusi Alternatif Pertanian</h3>
+					<h4 id="Pls">Bargumono</h4>
+					<p></p>
+				</div> 
+				<a href="#"><button class="buttonM3">DOWNLOAD</button></a>
+			</div>
 
-<script src="js/topnav.js"></script>
+			<div class="buku">
+				<div class="buku_img">
+					<img src="image/9786021507490_pengantar_ilmu_pertanian-agraris_agribisnis_industri__w414_hauto.jpg">
+				</div>
+				<hr>
+				<div class="buku_detail">
+					<h2>Pengantar Ilmu Pertanian</h2>
+					<h3>Agraris Agribisnis Industri</h3>
+					<h4>Soetriono</h4>
+					<p></p>
+				</div> 
+				<a href="#"><button class="buttonM3">DOWNLOAD</button></a>
+			</div>
+			<div class="buku">
+				<div class="buku_img">
+					<img src="image/buku.png">
+				</div>
+				<hr>
+				<div class="buku_detail">
+					<h2>Pertanian Ogranik</h2>
+					<h3>Solusi Alternatif Pertanian</h3>
+					<h4>Sabastian Eliyas Saragih</h4>
+					<p></p>
+				</div> 
+				<a href="#"><button class="buttonM3">DOWNLOAD</button></a>
+			</div>
+
+			<div class="buku">
+				<div class="buku_img">
+					<img src="image/GRAHA_ILMU___PRODUKSI_JAGUNG__BUKU_PERTANIAN.jpg">
+				</div>
+				<hr>
+				<div class="buku_detail">
+					<h2>Produksi jagung</h2>
+					<h3>Strategi Meningkatkan Produksi jagung</h3>
+					<h4>Atman</h4>
+					<p></p>
+				</div> 
+				<a href="#"><button class="buttonM3">DOWNLOAD</button></a>
+			</div>
+		</div>
+		<button id="load_more">More</button>
+	</div>
+	<div id="footer">
+		<div id="about_lainnya">
+			<div id="about">
+				<h3>Tentang Kami</h3>		
+				<li><a href="Bantuan.html">Bantuan</a></li>
+				<li><a href="TentangKami.html">Tentang Kami</a></li>
+				<li><a href="KontakKami.html">Kontak kami</a></li>	
+			</div>
+			<div id="lainnya">
+				<h3>Lainnya</h3>
+				<li><a href="SK.html">Syarat dan kebijakan</a></li>
+			</div>
+		</div>
+
+
+		<div id="sosmed">
+			<h3>Ikuti Kami</h3>
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+			<!-- <i class="fa fa-gmail"></i> -->
+			<a href="#"><i class="fa fa-whatsapp"></i></a>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main_script.js"></script>
+	<script src="js/topnav.js"></script>
+	<script type="text/javascript">
+		
+		$("#load_more").click(function () {
+			var hal = $("#list_buku").attr("hal");
+			hal = Number(hal);
+
+			if (hal == "") {
+				hal = 1;
+			}
+			else{
+				hal+=1;
+			}
+
+			$("#list_buku").attr("hal", hal);
+			if (hal == 2) {
+				$("#load_more").hide();
+			}
+
+			var path = "json/list_buku_"+hal+".json";
+			console.log("path : "+path);
+
+			$.ajax({
+				url : path,
+				type: 'GET',
+				dataType: 'json'
+			})
+			.done(function (buku) {
+				console.log("success");
+				console.log(buku);
+
+				// var data = JSON.parse(buku);
+				var gabung = "";
+				$.each(buku, function (index, val) {//looping
+					gabung += `
+					<div class="buku">
+					<div class="buku_img">
+					<img src="`+val.img+`">
+					</div>
+					<hr>
+					<div class="buku_detail">
+					<h2>`+val.judul+`</h2>
+					<h3>`+val.sub_judul+`</h3>
+					<h4>`+val.penulis+`</h4>
+					<p></p>
+					</div> 
+					<a href="#"><button class="buttonM3">DOWNLOAD</button></a>
+					</div>
+					`;
+				});
+
+				$("#list_buku").append(gabung);
+			})
+			.fail(function (msg, xerror) {
+				console.log("error");
+				console.log(msg);
+				console.log(xerror);
+			});
+		});
+
+		$("#btn_update").updateBuku();
+		$("#btn_file").uploadGambar();
+	</script>
 </body>
 </html>
